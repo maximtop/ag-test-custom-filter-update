@@ -1,0 +1,12 @@
+{
+  "name": "ag-test-custom-filter-update",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve"
+  },
+  "dependencies": {
+    "serve": "^10.1.1"
+  }
+}
