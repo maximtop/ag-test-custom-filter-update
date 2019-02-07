@@ -2,4 +2,4 @@
 #%#console.log('test custom rules');
 ||perfmelab.com^$third-party
 ||digitaalburg.com^*banner
-klusidee.nl#@#.header-ads
+klusidee.nl#@#.header
