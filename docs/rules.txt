@@ -3,3 +3,4 @@
 ||perfmelab.com^$third-party
 ||digitaalburg.com^*banner
 klusidee.nl#@#.header
+#%#console.log('added rule');
