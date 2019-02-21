@@ -2,8 +2,8 @@
 ! Title: Boo Berry's Adblocking List
 ! Author: Boo Berry
 ! Description: Additional adblocking filters maintained by whom calls himself Boo Berry.
-! Version: 1.0.0.232
-! TimeUpdated: 2019-02-10
+! Version: 1.0.0.233
+! TimeUpdated: 2019-02-15
 ! Expires: 2 days (update frequency)
 @@||*/favicon*.png
 @@||*/favicon*.ico
