@@ -2,8 +2,8 @@
 ! Title: Boo Berry's Adblocking List
 ! Author: Boo Berry
 ! Description: Additional adblocking filters maintained by whom calls himself Boo Berry.
-! Version: 1.0.0.233
-! TimeUpdated: 2019-02-15
+! Version: 1.0.0.234
+! TimeUpdated: 2019-02-14
 ! Expires: 2 days (update frequency)
 @@||*/favicon*.png
 @@||*/favicon*.ico
@@ -791,3 +791,4 @@ webmail.centurylink.net###skin_container_tree_bottom_ad_collapse
 brainyquote.com##.stickyAdFooter
 ultimate-guitar.com##.js-ad-alternative, ._3eF7j
 ultimate-guitar.com##div.js-page.js-global-wrapper:nth-child(2) > div > div > div._16KsA:last-child > div._3EHj3._3r7GU:first-child
+#%#console.log('updated version, date set back to 14');
