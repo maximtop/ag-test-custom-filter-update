@@ -1,10 +1,793 @@
-! Title: Custom filter
-! Version: 2.10.0.3
-#%#console.log('test custom rules');
-||perfmelab.com^$third-party
-||digitaalburg.com^*banner
-klusidee.nl#@#.header
-#%#console.log('added rule');
-#%#console.log('added version');
-
-
+!
+! Title: Boo Berry's Adblocking List
+! Author: Boo Berry
+! Description: Additional adblocking filters maintained by whom calls himself Boo Berry.
+! Version: 1.0.0.232
+! TimeUpdated: 2019-02-14
+! Expires: 2 days (update frequency)
+@@||*/favicon*.png
+@@||*/favicon*.ico
+@@||*/*.ico
+@@||*/*logo*16*.png
+@@||*/linkicon*.png
+@@||*/*logo*32*.png
+@@||payment.republiconline.com^$important,document,~extension
+@@sputnik.whatbox.ca$extension
+@@||bluebird.com^$important,document,~extension
+@@||gray.ftp.clickability.com/ky3webftp/*.jpg
+@@||browserleaks.com/proxy^$generichide
+@@||browserleaks.com/img/i/smile.gif?q-geoIP.js
+@@||upgradeserver.coremobility.com^$app=com.coremobility.app.vnotes
+@@||data.flurry.com/aap.do$app=com.coremobility.app.vnotes
+@@||oma.ssprov.sprint.com$app=com.redbend.vdmc
+@@||xtrapath2.izatcloud.net/xtra3gr.bin
+@@||public-api.wordpress.com/oauth2/authorize?*$important,document,~extension
+@@||en.gravatar.com/connect/*$important,document,~extension
+@@||clients4.google.com/chrome-sync/command/*
+@@||clients4.google.com/invalidation/android/request/*
+@@||clients4.google.com/chrome-sync/dev/command/*
+@@||profile.accounts.firefox.com/$important,app=firefox.exe
+@@||services.addons.mozilla.org/$important,app=firefox.exe
+@@||aus5.mozilla.org/$important,app=firefox.exe
+@@||api.accounts.firefox.com/$important,app=firefox.exe
+@@||versioncheck.addons.mozilla.org/$important,app=firefox.exe
+@@||lastpass.com^$important,document,~extension
+@@||ogs.google.com/u/0/_/notifications/count$important
+@@||ocsp.digicert.com/$important
+@@||ocsp2.globalsign.com^$important,document,~extension
+@@||detectportal.firefox.com/success.txt
+@@||statusg.digitalcertvalidation.com^$important,document,~extension
+@@||clients2.google.com/service/update2*$important,document,~extension
+@@||accounts.google.com/GetUserInfo*$important,document,~extension
+@@||tools.google.com/service/update2*$important,document,~extension
+@@||ssl.gstatic.com/safebrowsing/csd^$important
+@@||accounts.google.com/OAuthLogin*$important,document,~extension
+@@||googleapis.com/oauth2^$important
+@@||google.com/searchdomaincheck?format=domain&type=chrome$important
+@@||accounts.google.com/ListAccounts*$important,document,~extension
+@@||clientservices.googleapis.com/chrome-variations/seed?*^$important
+@@||notifications.google.com^$important,document,~extension
+@@||ogs.google.com/u/0/_/notifications/count*$important,document,~extension
+@@||translate.googleapis.com^$important
+@@||safebrowsing.googleapis.com^$important
+@@192.168.0.1$extension
+@@192.168.1.1$extension
+@@8.8.8.8$extension
+@@8.8.4.4$extension
+@@1.1.1.1$extension
+@@1.0.0.1$extension
+@@||web.telegram.org^$important,document,jsinject,extension
+@@serviceassistance.centurylink.com$extension
+@@||serviceassistance.centurylink.com^$important,document,jsinject,extension
+@@||*-300x250*-$domain=tmz.com
+@@||twitch.tv^$important,~document,~extension
+@@||wrestlezone.com/assets/uploads/*-230x150.jpg
+@@||wrestlezone.com/wp-content/plugins/*$domain=mandatory.com
+@@||creditonebank.com^$important,document,jsinject,extension
+@@||firefox.tampermonkey.net^$important,document,jsinject,extension
+@@||api.accounts.firefox.com^$important,document,jsinject,extension
+@@||services.mozilla.com/$important,app=firefox.exe
+@@||profile.accounts.firefox.com^$important,document,jsinject,extension
+@@||api.bitwarden.com^$important,document,jsinject,extension
+@@||archive.mozilla.org/$important,app=firefox.exe
+@@||versioncheck-bg.addons.mozilla.org/$important,app=firefox.exe
+@@||ocsp.pki.goog/GTSGIAG3*$important,document,~extension
+@@||identity.bitwarden.com^$important,document,~extension
+@@||titlestorage.xboxlive.com/json/users^$important,app=Solitaire.exe
+@@||weather.com/profile/login^$important,document,~extension
+@@||play.vidyard.com^$important,document,~extension
+@@||centurylink.com/help/chat/*$important,document,~extension
+@@||real-debrid.com^$important,document,~extension
+@@||albumartexchange.com^$stealth
+@@||notifications.bitwarden.com^$important,~document,~extension
+@@||identity.bitwarden.com^$important,~document,~extension
+@@||login.vivaldi.net/oauth2/*^$important,~document,~extension
+@@||bifrost.vivaldi.com/vivid-auth/*^$important,~document,~extension
+@@||bifrost.vivaldi.com/vivid-sync/*^$important,~document,~extension
+@@||api.bitwarden.com^$important,~document,~extension
+@@||icons.bitwarden.net^$important
+@@||floatplane.com^$important,document,~extension
+@@||protonmail.com^$important,document,~extension
+@@||login.live.com^$important,document,~extension
+@@||outlook.live.com^$important,document,~extension
+bing.com###dhp
+rutracker.org###idx-3
+rutracker.org###adriver-240x120
+rutracker.org###top-bn-swf
+rutracker.org###bn-bot-wrap
+rutracker.org###top-bn
+newegg.com###membership_bar
+mandatory.com##DIV[class="ad"]
+mandatory.com###roadblock
+wikipedia.org##DIV#centralNotice
+ebay.com###skyscraper-container
+ebay.com###gh-doodleL
+ebay.com###user-feedback
+tampermonkey.net###curtain
+fanart.tv###generic > DIV.container:nth-child(4) > DIV.inset_box.padded_inset:first-child > SPAN:nth-child(3)
+fanart.tv###generic > DIV.container:nth-child(4) > DIV.inset_box.padded_inset:first-child > SPAN:nth-child(2)
+fanart.tv###generic > DIV.container:nth-child(4) > DIV.inset_box.padded_inset:first-child
+fanart.tv###generic > DIV.container:nth-child(2) > DIV.searchbg
+fanart.tv##.inset_box.padded_inset[style="position:relative;"]
+fanart.tv##.container[style="position: relative;top: -20px;padding-top: 0;"]
+fanart.tv##.searchbg[style="margin: 0 60px;position: relative;top: 32px;"]
+fanart.tv##A[href="https://fanart.tv/vip/"]
+fanart.tv##A[href="https://fanart.tv/contribute/"]
+fanart.tv##.adblock
+battlelog.battlefield.com###app-promotion
+macrumors.com##.ad
+bing.com###office
+deviantart.com###oh-menu-upgrade
+playonmac.com###menu_droite > H1:nth-child(7)
+playonmac.com###menu_droite > DIV.login:nth-child(9)
+playonlinux.com###menu_droite > DIV.login:nth-child(9)
+playonlinux.com###menu_droite > H1:nth-child(7)
+playonlinux.com###menu_droite > P:nth-child(12)
+playonlinux.com###menu_droite > P:last-child
+playonlinux.com###menu_droite > H1:nth-child(11)
+phoronix.com##DIV.body_wrapper:nth-child(2) > TABLE:nth-child(4) > TBODY > TR > TD:last-child
+phoronix.com###phxcms_toplogo > DIV:first-child > A:last-child
+phoronix.com###welcome_screen
+phoronix.com###phxcms_content_left > DIV.phxcms_nav_int:nth-child(4)
+phoronix.com###phxcms_content_left > HR:nth-child(3)
+phoronix.com###phxcms_content_left > DIV:nth-child(8)
+phoronix.com###phxcms_content_left > HR:nth-child(9)
+phoronix.com###phxcms_content_left > DIV:nth-child(2)
+phoronix.com###phxcms_content_phx > DIV:first-child > DIV.phxcms_contentphx_right_bar:last-child
+bing.com###thp_notf_div
+nsanedown.com###breadcrumb
+deviantart.com###overhead-promo > A.overhead-promo-a
+nsaneforums.com##.AdsTest
+500px.com###hellobar > DIV.inside.site_promotion
+phoronix.com###phxcms_content_phx > DIV:first-child > DIV.phxcms_contentphx_right_bar:nth-child(4)
+phoronix.com###widget_153
+phoronix.com###widget_152
+rutracker.org###idx-mgid
+mail.centurylink.net##.skin_outer_ad
+mail.centurylink.net###skin_container_tree_bottom_ad_collapse
+forum.xda-developers.com###advertisement_RightPanel
+forum.xda-developers.com##.purchad
+forum.xda-developers.com##DIV.postbit-wrapper.purch-box
+onmsft.com##.breakersingle
+mandatory.com###text-29 > DIV.textwidget > DIV > DIV:first-child > IFRAME
+ebay.com##.beta-placement
+mediafire.com##.onBoarding
+ozarksfirst.com###p_p_id_56_INSTANCE_IjHZvh6ZK4ez_
+ozarksfirst.com###p_p_id_56_INSTANCE_V53MfLwwDp4W_
+newegg.com###mt_FixedRightBanner
+rutracker.org###page_footer > DIV.tCenter.nowrap:nth-child(5) > A:nth-child(2) > IMG
+centurylink.net###outbrain_widget_0
+centurylink.net###outbrain_widget_1
+rutracker.org###top-bn-1
+wikipedia.org###siteNotice
+rutracker.org###bgn-str
+rutracker.org###bgn-topic
+rutracker.org###bn-idx-1
+rutracker.org###bn-idx-2
+rutracker.org###bn-idx-3
+deviantart.com###messages > TABLE.messages.f.full:last-child > TBODY > TR > TD.f:nth-child(2) > DIV.messages-right > DIV.mczone.mczone-you-know-what:first-child
+newegg.com###headerArea > DIV.headerArea:last-child > DIV.headerAreaTop:first-child > UL.top-tabs > LI.top-tab.tab-promo.plain:nth-child(2) > A
+newegg.com###headerArea > DIV.headerArea > DIV.headerAreaTop:first-child > UL.top-tabs > LI.top-tab:nth-child(3) > A > IMG
+rutracker.org###adsel-bn-topic
+wunderground.com##.report-ad
+tonymacx86.com###widgetlist_column1 > LI > DIV.section_content > DIV.onethird:nth-child(3) > DIV.fullwidth:first-child > DIV.article_preview:nth-child(3)
+computeraudiophile.com###sidebar_container
+hardwarecanucks.com###toparea
+mobile.aws.weather.com###banner1
+strongpasswordgenerator.com##.ads
+rutracker.org##.brand-link-1
+rutracker.org###brand-flash-banner
+rutracker.org###idx-crisis
+rutracker.org##.brand-link-2,.brand-link-index
+rutracker.org###bn-top-skidka
+last.fm##.feedback-message,.feedback-message--dismissed
+deviantart.com###messages > TABLE.messages.f.full:last-child > TBODY > TR > TD.f:nth-child(2) > DIV.messages-right > DIV.mczone.mczone-you-know-what:nth-child(2)
+weather.com###wx-top-wrap
+newegg.com###__lpform_LoginName
+rutracker.org###page_footer > DIV.tCenter.nowrap:nth-child(5) > A:nth-child(3) > IMG
+mandatory.com##.native-teaser
+mandatory.com###text-2
+rutracker.org##.bn-idx
+deviantart.com###notes > TABLE.messages:last-child > TBODY > TR > TD.notes-center:nth-child(2) > DIV.mczone.mczone-you-know-what:first-child
+deviantart.com###aboutme-prompt-pill
+rutracker.org###page_footer > DIV.tCenter.nowrap:nth-child(4) > A:nth-child(3) > IMG
+ebay.com###pd-expanded
+ebay.com###pd-control
+ebay.com###pd-overlay
+ebay.com###pd-collapsed
+msn.com##.ad,.non-empty-ad
+wunderground.com##.ads-blocked
+msn.com###taboola-above-homepage-thumbnails
+facebook.com###pageFooter > DIV:nth-child(2) > TABLE.uiGrid._51mz.navigationGrid > TBODY > TR._51mx:first-child > TD._51m-.hLeft.plm:nth-child(8)
+last.fm###mantle_skin > DIV.container.page-content:nth-child(4) > DIV.row.clearfix > DIV.col-sidebar:last-child > DIV.related-content.YAD-fe834359-9b36-3648-937f-41ddf68a74f2:nth-child(4)
+rutracker.org###a49dbc05
+tmz.com##DIV#follow-tmz
+gravity.com##DIV#grv_widget
+tmz.com##DIV#legalbar
+tmz.com##DIV#grv-personalization-23
+tmz.com##DIV.sidebar-widget.posts-widget.around-the-web-thumbs
+tmz.com##DIV.sidebar-widget.posts-widget.around-the-web-headlines
+tmz.com##DIV.when-its-on-widget
+tmz.com##DIV.sidebar-widget.next-tmz-widget.sidebar-showtimes
+tmz.com###sidebar > DIV.sidebar-widget:nth-child(14) > DIV.widget-title:first-child
+tmz.com##DIV#adpos3
+tmz.com##DIV.sidebar-widget.single-post
+tmz.com###sidebar > DIV.sidebar-widget:nth-child(16) > DIV.widget-title:first-child
+tmz.com##DIV.sidebar-widget.posts-widget.latest-posts.tmzsports-posts + * > .widget-title
+tmz.com##DIV.gotatip
+omgubuntu.co.uk##.mfp-wrap,.mfp-close-btn-in,.mfp-auto-cursor,.mfp-ready
+omgchrome.com##.mfp-wrap,.mfp-close-btn-in,.mfp-auto-cursor,.mfp-ready
+tmz.com###sponsor-list-badge--287672
+cyberduelist.com###top-info > DIV.header-banner:first-child
+cyberduelist.com##.size-full,.wp-image-7580,.alignleft
+wunderground.com##.ad-nav
+ebay.com###asyncebml
+facebook.com###pagelet_ego_pane
+qobuz.com###store-launch-info-popin
+qobuz.com##.modal-backdrop
+tmz.com##.tmz-poll,.poll-homepage-post
+cryptomundo.com##DIV#users_farbar
+cryptomundo.com##DIV[style="margin:auto;width;160px;height:600px;"]
+cryptomundo.com##IMG[src="http://cryptomundo.com/wp-content/uploads/merch_banner1.jpg"]
+cryptomundo.com###sidebar > H2:nth-child(6)
+cryptomundo.com##DIV#function_box
+msn.com##.inlineapppromo
+rutracker.org###brand-bn-wrap
+phoronix.com###happy_holidays
+##.cc_banner, .cc_container, .cc_container--open
+phoronix.com###wny
+tmz.com###tmzHB-large
+phoronix.com##NOSCRIPT + SPAN[style="display: block; text-align: left; font-size: 11px;"]
+rutracker.org###page_footer > DIV.tCenter.nowrap:nth-child(4)
+rutracker.org###page_header > DIV.topmenu:last-child > TABLE.w100 > TBODY > TR > TD.tCenter.pad_2:nth-child(2)
+yahoo.com###my-adsTXTL-iframe
+yahoo.com###yset-search-upsell-container
+yahoo.com###yset-upsell-div
+linustechtips.com#@##ipsLayout_sidebar
+tmz.com##.watch-tmz
+onmsft.com##DIV.ad-blocking-advisor-wrapper:first-child
+yahoo.com###applet_p_50000161
+yahoo.com###applet_p_50000170
+yahoo.com###applet_p_93109
+yahoo.com###applet_p_63796
+yahoo.com###applet_p_8640053
+yahoo.com###applet_p_50000009
+yahoo.com###applet_p_50000016
+rutracker.org###page_header > DIV.topmenu:last-child > TABLE.w100 > TBODY > TR > TD.tCenter.pad_2 > DIV
+newegg.com##DIV.banner-outside-right
+newegg.com##DIV.banner-outside-left
+windowscentral.com###ctBoc > DIV.zone728:first-child > A > IMG
+wired.com##DIV.advertisement.hide
+prodesigntools.com##DIV#wpfront-notification-bar
+m.newegg.com##DIV#smartbanner
+usdirectexpress.com##DIV#alertBox
+m.tmz.com##DIV.feed-cadence.feed-gpt-300x250
+msn.com##.bingrewards
+msn.com##.storeappstile,.smalllogo
+secure.newegg.com###amexBannerSection
+secure.newegg.com##.message-bar
+secure.newegg.com##.financing-promo-banner
+phoronix.com##P[style="display: block; border: 1px solid rgb(238, 238, 238); padding: 4px; font-size: 11px; margin: 10px 0px;"]
+unexplained-mysteries.com###newssublayoutc > DIV.fpnewsleft:nth-child(12)
+yahoo.com##.lrec-bgcolor
+ky3.com##.moduleTextAd
+ky3.com###obr_ts_1
+ky3.com###outbrain_widget_0
+ky3.com###sponsoredAd
+yahoo.com###mega-top-ff-promo
+tmz.com##IMG[alt="TMZ Sports Show"]
+tmz.com##IMG[alt="TMZ TOUR"]
+last.fm##LI.recs-feed-item.recs-feed-item--native-ad
+##DIV#smartbanner.android.shown
+deviantart.com##.ad-container,.small
+stormviewlive.com##DIV.svl_content_wrapper:nth-child(8) > DIV.svl_info_bar.svl_background_color:last-child
+stormviewlive.com##DIV.svl_content_wrapper:nth-child(5) > DIV.svl_info_bar.svl_background_color:first-child
+rutracker.org###topic-bn-728
+deviantart.com###block-notice
+phoronix.com###content > [type="text/javascript"] + *
+yahoo.com###Billboard-ad
+overclock.net###footer-ad
+nsanedown.com###block-ads3-
+guitars101.com##.vs-security-message
+rutracker.org###main_content_wrap > TABLE.w100:first-child > TBODY > TR > TD:last-child
+nsaneforums.com###ipsLayout_mainArea > CENTER:nth-child(2)
+tmz.com##.newsletter-signup-container
+rutracker.org###topic_main > TBODY:nth-child(3) > TR.row5 > TD.td2.bn-topic > DIV
+ebay.com##.pt-tray
+rutracker.org###bn-top-iframe
+ebay.com##.mfe-promoted-label
+ebay.com##.promoted-lv
+last.fm##DIV.subscribe-cta
+rutracker.org###bn-top-stub
+facebook.com##div[class^="userContentWrapper"][-ext-has="a.uiStreamSponsoredLink"]
+accuweather.com##DIV#header-davek
+accuweather.com##DIV.redesign-welcome
+accuweather.com##DIV#aadTop300
+foobar2000.org##DIV.size.color.border.margin.content:nth-child(2) > DIV.padding:last-child > TABLE:nth-child(4) > CAPTION:first-child
+foobar2000.org##DIV.size.color.border.margin.content:nth-child(2) > DIV.padding:last-child > DIV.release_info:last-child > TABLE:nth-child(13) > CAPTION:first-child
+foobar2000.org###components > TABLE:nth-child(2) > CAPTION:first-child
+msn.com##.normalsection
+rutracker.org###logo > TABLE > TBODY > TR > TD.tCenter.w100:last-child
+chiaanime.co##DIV[style="width: 300px; height: 250px"]
+chiaanime.co##DIV[style="width: 728px; height: 90px"]
+chiaanime.co##DIV.avm
+ebay.com##DIV[title="ADVERTISEMENT"]
+demonoid.pw###blckblckA
+trollandtoad.com##.searchAdContainer
+trollandtoad.com##.rightNavAdContainer
+###cookie-law-info-bar
+rutracker.org#%#AG_onLoad(function() { AG_removeElementBySelector('iframe[id^="_ads_"]'); });
+my-rutracker.org###bn-bot-wrap
+my-rutracker.org###adriver-240x120
+my-rutracker.org##.bn-topic
+my-rutracker.org##a[class^="brand-link"]
+my-rutracker.org##div[class^="bn-idx"]
+my-rutracker.org##div[id^="topic-bn-"]
+dwnld.net.ua,maintracker.org,rutracker-org.appspot.com,rutracker.cr,rutracker.net,rutracker.org###bn-bot-wrap
+maintracker.org,rutracker-org.appspot.com,rutracker.cr,rutracker.net,rutracker.org##.bn-topic
+maintracker.org,rutracker-org.appspot.com,rutracker.cr,rutracker.net,rutracker.org##a[class^="brand-link"]
+maintracker.org,rutracker-org.appspot.com,rutracker.cr,rutracker.net,rutracker.org##div[class^="bn-idx"]
+rutracker.org###bn-drg-1
+rutracker.org##div[id^="top-bn-"]
+newegg.com##LI.top-nav-tab.has-menu.top-premier-menu
+ebay.com###gh-ti
+wikipedia.org###frbanner3
+rutracker.org###main_content_wrap > TABLE.w100:nth-child(4) > TBODY > TR > TD.pad_2:last-child
+stormviewlive.com##DIV.svl_content_wrapper:nth-child(9) > DIV:last-child
+last.fm##.subscribe-cta
+last.fm$$div[class="subscribe-cta"]
+bing.com###id_rh
+last.fm$$iframe[title="3rd party ad content"]
+last.fm##DIV.leader_top.lastfm-ad
+deviantart.com##DIV.gogo-upsell.active
+bandcamp.com##.walkthrough-steps
+facebook.com##._41uf
+facebook.com###pagelet_rhc_footer > DIV > DIV._45mq:last-child > DIV.fsm.fwn.fcg:first-child > SPAN:nth-child(8)
+facebook.com###pagelet_rhc_footer > DIV > DIV._45mq:last-child > DIV.fsm.fwn.fcg:first-child > A:nth-child(5)
+facebook.com###pagelet_rhc_footer > DIV > DIV._45mq:last-child > DIV.fsm.fwn.fcg:first-child > SPAN:nth-child(6)
+ozarksfirst.com##.sponsor
+newegg.com###popularDeals
+newegg.com###guest_feedback_from_newegg
+phoronix.com#%#aax_getad_mpb = function() {};
+last.fm##.mpu-subscription-upsell,.mpu-subscription-upsell--mpu
+facebook.com##div > div[id^="hyperfeed_story_"][-ext-has='a._m8c']
+facebook.com##div > div[id^="hyperfeed_story_"][-ext-has='a[href*="?hc_ref=ADS"]']
+weather.com##.nl-newsletter_signup,.data-eq-newssignup-sm
+facebook.com$$div[id^="u_ps_jsonp_"]
+yellowpages.com###top-center-ads
+yellowpages.com##.listings-and-ads
+last.fm###mobile_intromercial
+ultimate-guitar.com#%#document.cookie = "mojo_takeover=1";
+ultimate-guitar.com##.js-ug-alert-cookie
+500px.com##.classes_widget
+500px.com##.quest_widget__wrapper
+500px.com##.upgrade_widget__wrapper,.free_to_awesome
+onmsft.com##DIV.container:nth-child(4) > DIV.row:nth-child(3) > DIV.col-sm-6.pull-right:last-child > DIV.row:nth-child(2) > DIV.col-lg-5:last-child > DIV.row > DIV.col-sm-10 > DIV.article-item > DIV.article-img.text-center
+onmsft.com##DIV.container:nth-child(4) > DIV.row:nth-child(3) > DIV.col-sm-6.pull-right:last-child > DIV.row:nth-child(4) > DIV.col-lg-5:nth-child(2) > DIV.row > DIV.col-sm-10 > DIV.article-item > DIV.article-img.text-center
+onmsft.com##DIV.container:nth-child(4) > DIV.row:nth-child(3) > DIV.col-sm-6.pull-right:last-child > DIV.row:nth-child(7) > DIV.col-lg-5:nth-child(2) > DIV.row > DIV.col-sm-10 > DIV.article-item > DIV.article-img.text-center
+onmsft.com##DIV.container:nth-child(4) > DIV.row:nth-child(3) > DIV.col-sm-6.pull-right:last-child > DIV.row:nth-child(4) > DIV.col-lg-5:nth-child(2) > DIV.row > DIV.col-sm-10
+onmsft.com##DIV.container:nth-child(4) > DIV.row:nth-child(3) > DIV.col-sm-6.pull-right:last-child > DIV.row:nth-child(4) > DIV.col-lg-5:nth-child(2)
+onmsft.com##DIV.container:nth-child(4) > DIV.row:nth-child(3) > DIV.col-sm-6.pull-right:last-child > DIV.row:nth-child(7) > DIV.col-lg-5:nth-child(2) > DIV.row > DIV.col-sm-10
+onmsft.com##DIV.container:nth-child(4) > DIV.row:nth-child(3) > DIV.col-sm-6.pull-right:last-child > DIV.row:nth-child(7) > DIV.col-lg-5:nth-child(2)
+onmsft.com##DIV.container:nth-child(4) > DIV.row:nth-child(3) > DIV.col-sm-6.pull-right:last-child > DIV.row:nth-child(2) > DIV.col-lg-5:last-child > DIV.row > DIV.col-sm-10
+onmsft.com##DIV.container:nth-child(4) > DIV.row:nth-child(3) > DIV.col-sm-6.pull-right:last-child > DIV.row:nth-child(2) > DIV.col-lg-5:last-child
+onmsft.com###ads
+thurrott.com###page-wrapper > DIV.toolbar-container:first-child > DIV.toolbar-block > DIV.toolbar_right:last-child > NAV.toolbar_menu-wrapper.menu-wrapper.-toolbar > UL.toolbar_menu-list.menu-list > LI.menu-item.-cta:nth-child(3) > A
+thurrott.com###post > DIV.loop-list.-petri:nth-child(9)
+thurrott.com###sidebar > DIV:nth-child(6) > DIV.widget > DIV.loop-list.-petri.-alt
+newegg.com##HEADER.header:nth-child(10) > DIV.header-inner:first-child > DIV.header-tabs:nth-child(2)
+msn.com##.mediumcard-placeholder
+msn.com###links > LI:nth-child(3) > A
+bing.com###sw_footL > LI:nth-child(5)
+bing.com###sw_footL > LI:nth-child(4)
+ky3.com###gdm-ad-wallpaper
+ozarksfirst.com###p_p_id_56_INSTANCE_JOG1t9JfQ9wV_
+ozarksfirst.com###p_p_id_56_INSTANCE_g9i3PzAqaxJE_
+ozarksfirst.com###p_p_id_56_INSTANCE_eL75k4ic5a36_
+ozarksfirst.com###p_p_id_56_INSTANCE_BSL2lSujiBiw_
+facebook.com###pagelet_rhc_footer > DIV._45mq > DIV._26z1:last-child > DIV.fsm.fwn.fcg:first-child > SPAN:nth-child(6)
+facebook.com###pagelet_rhc_footer > DIV._45mq > DIV._26z1:last-child > DIV.fsm.fwn.fcg:first-child > A:nth-child(5)
+facebook.com###pagelet_rhc_footer > DIV._45mq > DIV._26z1:last-child > DIV.fsm.fwn.fcg:first-child > SPAN:nth-child(4)
+theverge.com##DIV.l-root.l-reskin:nth-child(5) > FOOTER.c-footer:last-child > DIV.l-wrapper.c-footer__wrapper > DIV.c-footer__section.c-footer__section-vox:last-child > A.u-block.c-footer__corporate-link:nth-child(2)
+onmsft.com##div.container:nth-child(3) > div.row:nth-child(3) > div.col-sm-6.pull-right:last-child > div.row:nth-child(2) > div.col-lg-5:last-child > div.row > div.col-sm-10 > div.article-item > div.article-img.text-center > div
+onmsft.com##div.container:nth-child(3) > div.row:nth-child(3) > div.col-sm-6.pull-right:last-child > div.row:nth-child(2) > div.col-lg-5:last-child > div.row > div.col-sm-10
+onmsft.com##div.container:nth-child(3) > div.row:nth-child(3) > div.col-sm-6.pull-right:last-child > div.row:nth-child(2) > div.col-lg-5:last-child
+onmsft.com##div.container:nth-child(3) > div.row:nth-child(3) > div.col-sm-6.pull-right:last-child > div.row:nth-child(4) > div.col-lg-5:nth-child(2) > div.row > div.col-sm-10 > div.article-item > div.article-img.text-center > div
+onmsft.com##div.container:nth-child(3) > div.row:nth-child(3) > div.col-sm-6.pull-right:last-child > div.row:nth-child(4) > div.col-lg-5:nth-child(2) > div.row > div.col-sm-10
+onmsft.com##div.container:nth-child(3) > div.row:nth-child(3) > div.col-sm-6.pull-right:last-child > div.row:nth-child(4) > div.col-lg-5:nth-child(2)
+onmsft.com##div.container:nth-child(3) > div.row:nth-child(3) > div.col-sm-6.pull-right:last-child > div.row:nth-child(7) > div.col-lg-5:nth-child(2) > div.row > div.col-sm-10 > div.article-item > div.article-img.text-center > div
+onmsft.com##div.container:nth-child(3) > div.row:nth-child(3) > div.col-sm-6.pull-right:last-child > div.row:nth-child(7) > div.col-lg-5:nth-child(2) > div.row > div.col-sm-10
+onmsft.com##div.container:nth-child(3) > div.row:nth-child(3) > div.col-sm-6.pull-right:last-child > div.row:nth-child(7) > div.col-lg-5:nth-child(2)
+tmz.com###page > DIV.around-the-web-widget:last-child
+onmsft.com##DIV.article-content:nth-child(6) > DIV.container > DIV.row > DIV.col-md-8.col-md-offset-1 > DIV.col-md-10.more-stories:last-child
+500px.com##.sidebar__aprilten_region
+playonlinux.com###menu_droite > DIV.login:nth-child(8) > DIV
+playonmac.com###menu_droite > DIV.login:nth-child(8) > DIV
+forums.pcper.com###sidebar_container
+mail.centurylink.net###gemini_main_div
+onmsft.com##.row > .col-lg-5[-ext-has='div[style="background:#ccc;width:300px;height:250px"]']
+onmsft.com##.row > .col-lg-5[-ext-has='ins.adsbygoogle']
+onedrive.live.com##.od-PremiumUpsellBanner, .od-PremiumUpsellBanner--cursor
+ghacks.net##.category-deals
+facebook.com###createNav > div._3075:last-child > a:first-child
+cryptomundo.com###square300
+https://linustechtips.com/main/uploads/monthly_2017_05/Forum_Banner.jpg.382c51dfa83a1db853a058fb21d8ea51.jpg$domain=linustechtips.com
+linustechtips.com###ipsLayout_sidebar > div.ipsAdvertisement.ipsSpacer_both.ipsSpacer_half:first-child
+cryptozoologynews.com##.ad2
+cryptozoologynews.com###menu-item-10042 > a
+chiaanime.co##header:first-child > section.banner > div.banner_menu:nth-child(2) > nav.menu_top > ul > li:last-child
+walmart.com##.Cart-CreditCardBanner, .Cart-CreditCardBanner-Dynamic
+mail.centurylink.net###DWT21
+ky3.com###obr_ts_2
+userstyles.org##.adContainer
+userstyles.org###view_inner > div.styles:nth-child(2) > div.style_card_long:nth-child(3)
+ultimate-guitar.com##.h-takeover__left, .h-takeover--content
+linuxmint.com###sidebar > h3:nth-child(5)
+head-fi.org##.hf_sponsor_140x140
+500px.com###hellobar
+500px.com##.promo_widget__wrapper, .stats_challenge_widget__join
+yahoo.com###applet_p_50000278
+yahoo.com###applet_p_50000277
+yahoo.com###uh-notifications
+msn.com##DIV.editorialheadline.pipedheadlinelistwithimage.entertainment.adlinks
+stormviewlive.com##div.svl_content_wrapper:nth-child(6) > div:first-child
+stormviewlive.com##div.svl_content_wrapper:nth-child(8) > div:first-child
+stormviewlive.com##div.svl_content_wrapper:nth-child(8) > div:last-child
+mega.nz###startholder > div.bottom-page.scroll-block.download:last-child > div.download-mid-white-block.new-ads:last-child > div.download.content-block:nth-child(4) > div.download.main-pad > div.download.centered-block > div.download.buttons-block:nth-child(2) > div.button.download-button.red.with-megasync.down-arrow.white-txt:first-child
+filefactory.com###ff-wp-promo-inner
+filefactory.com###wp-body-layout-center
+filefactory.com###wp-body-layout-right
+filefactory.com###ff-wallpaper
+filefactory.com###wp-body-layout > a.wp-body-layout-side:last-child
+youtube.com#@#.annotation.iv-promo
+youtube.com#@#.annotation.iv-branding
+youtube.com#@#.iv-promo-video
+youtube.com#@#.ytp-cards-teaser
+youtube.com#@#.ytp-ce-element
+youtube.com#@#.ytp-pause-overlay
+youtube.com#@#.yt-consent-banner
+gaming.youtube.com#@#.ytg-notification-footer
+userstyles.org###view_inner > div.styles:nth-child(2) > div.style_card_long:nth-child(13)
+ghacks.net###sidebar > strong:contains(Advertisement)
+ghacks.net##.type-post > strong:contains(Please share this article)
+ky3.com###rightColumn > section:nth-child(4) > h3:first-child
+ky3.com###rightColumn > section:nth-child(4) > div:last-child > p:first-child
+ky3.com###rightColumn > section:nth-child(4) > div:last-child > p:last-child
+ky3.com###rightColumn > section:nth-child(4) > div:last-child > iframe:nth-child(2)
+ky3.com###rightColumn > section:nth-child(5) > div > div.text-center
+ky3.com###rightColumn > section:nth-child(6) > div > table > tbody
+ky3.com###rightColumn > section:nth-child(5) > div:last-child > div
+ky3.com###rightColumn > section:nth-child(5) > h3:first-child
+ky3.com###rightColumn > section:nth-child(6) > div > div.text-center > h2:first-child
+ky3.com###rightColumn > section:nth-child(6) > div > div.text-center
+ky3.com###rightColumn > section:nth-child(7) > div > table > tbody
+demonoid.pw###bbb
+||api.circularhub.com/partner_services/module.js?id=*
+||cdn.idstatic.com/cms/live/218/BB-and-Web-MD.png?*
+||cdn.idstatic.com/cms/live/218/Ozarks-140-920-px.jpg
+||top100-images.rambler.ru/top100/*
+||openstat.net/i/*
+||neweggbusiness.com/?utm_medium=newegg&utm_source=newegg-home&cm_mmc=ref-newegg-_-newegg-home-_-na-_-na$domain=newegg.com
+||static.rutracker.org/images/casino-2.gif$domain=rutracker.org
+||images10.newegg.com/WebResource/Themes/2005/Nest/BTS_toptab2.png
+||static.rutracker.org/images/ddos-guard-1.jpg$domain=rutracker.org
+||static.rutracker.org/images/ddos-guard-2.jpg$domain=rutracker.org
+||yimg.com/uq/syndication/yad-iframe.*
+||media.tmz.com/*groupon*$domain=tmz.com
+||media.tmz.com/*tour*promo*.*$domain=tmz.com
+||static2.rutracker.org/brand/*
+||static.rutracker.org/images/ddos-guard*$domain=rutracker.org
+||top100-images.rambler.ru/top100/banner*$domain=rutracker.org
+||openstat.net/i/*$domain=rutracker.org
+||images10.newegg.com/WebResource/Themes/2005/Nest/new_tab_business.png
+||static2.t-ru.org/brand/*
+||facebook.com/sem_campaigns/
+||api.taboola.com/1.1/json/microsoftsolitairecollection/
+||adnxs.com^$empty
+||mystatus.skype.com/smallicon/$domain=sega-16.com|gamehacking.org
+||195.82.146.52/*.swf$domain=rutracker.org
+||195.82.146.52/200x300/$domain=rutracker.org
+||rutracker.org/brand/$image
+||rutracker.org/iframe/
+||rutracker.org/misc/*-240x400
+||static.rutracker.org/00
+||static.rutracker.org/images/bn-stub-
+||vogo-vogo.ru^$third-party
+||mythimna.com^$domain=onmsft.com
+||provideplant.com^
+||animeflv.me/assets/images/flaap.gif$domain=chiaanime.co
+||zhenhir.com/Zhe%20Nhir%20-%20Piezo%20mp3/Piezo.jpg
+||content.kwch.com/kwch/images/scoop/header_scoop.jpg$domain=ky3.com
+||functionalclam.com^$third-party
+||funkyimg.com/i/2rzcZ.jpg$domain=apollo.rip
+||fabriclondon.com/store/media/catalog/product/cache/1/image/900x/0dc2d03fe217f8c83829496872af24a0/f/a/fabric43_metro_area_packshot.jpg$domain=apollo.rip
+||f4.bcbits.com/img/a2981966680_10.jpg$domain=apollo.rip
+cryptomundo.com###farbar > h2:nth-child(7)
+||cryptomundo.com/wp-content/uploads/sybilla_banner.jpg$domain=cryptomundo.com
+||cryptomundo.com/wp-content/uploads/fmonnet.jpg$domain=cryptomundo.com
+||cryptomundo.com/wp-content/uploads/creatureplica-ad.jpg$domain=cryptomundo.com
+facebook.com##div[id^="substream_"] > div > div > div > div[id^="hyperfeed_story_id"][-ext-has='span.fcb']
+avxhm.se##div.container:nth-child(4) > div.row > div.col-lg-9:last-child > center:nth-child(7) > div:last-child
+avxhm.se##div.container:nth-child(4) > div.row > div.col-lg-9:last-child > center:nth-child(7) > a:first-child > img.img-responsive
+avxhm.se###top2 > div.col-md-12.text-center > center
+linustechtips.com###ipsLayout_footer > div.ipsLayout_container > div.ipsAdvertisement.ipsSpacer_both.ipsSpacer_half:first-child > ul.ipsList_inline.ipsType_center.ipsList_reset.ipsList_noSpacing > li.ipsAdvertisement_large.ipsResponsive_showDesktop.ipsResponsive_inlineBlock.ipsAreaBackground_light:first-child > a > img.ipsImage.ipsContained
+head-fi.org###div_dfp_ultra_leaderboard_1
+head-fi.org###hfxtmfd > div.iab_leaderboard_max:nth-child(4)
+head-fi.org###div_dfp_ultra_leaderboard_2
+head-fi.org###hfxtmfd > div.iab_leaderboard_max:nth-child(9)
+head-fi.org###div_dfp_filmstrip_2
+head-fi.org###div_dfp_wedge_1
+head-fi.org###div_dfp_sidekick_1
+head-fi.org###div_dfp_filmstrip_1
+ky3.com##.col-xs-24.col-sm-24.col-md-24.col-lg-24.centerImage
+ky3.com###circularhub_module_11524
+linustechtips.com###ipsLayout_sidebar > div:first-child > div.ipsAdvertisement.ipsSpacer_both.ipsSpacer_half
+theverge.com##.c-entry-box--group-4-up__body
+ky3.com###circularhub_module_11585
+ky3.com##.obrSponsored, .pull-right
+tmz.com###sidebar > div.js-sidebar-tracking.js-sidebar-tracking-active:first-child
+https://media.tmz.com/*/tmz-store-right-rail-week-*.jpg$domain=tmz.com
+https://media.tmz.com/*/tmz-tour-300x600*.jpg$domain=tmz.com
+tmz.com###sidebar > div.js-sidebar-tracking.js-sidebar-tracking-active:first-child > div:nth-child(2) > a > img
+amazon.com###nav-upnav
+amazon.com###cbcc_banner
+amazon.com##.adFeedback
+amazon.com###quickPromoBucketContent
+amazon.com###hows-my-search
+amazon.com###sc-new-upsell
+amazon.com###universal-detail-ilm
+amazon.com###rhf-container
+amazon.com###sc-rec-bottom
+amazon.com###cart-item-recs
+amazon.com###paRightContent
+amazon.com###sp_detail
+amazon.com###sp_detail2
+amazon.com###giveaway
+amazon.com###day0-sims-feature
+amazon.com###view_to_purchase-sims-feature
+amazon.com###rhf-error > div.rhf-border
+amazon.com###bia_content > div.a-box-inner.a-padding-base
+amazon.com##.iss-banner-ad, .iss-banner-theme-underlined
+500px.com##.following_tab__following_feed_callout_region
+500px.com##.sidebar__mentorship_region
+500px.com##.sidebar__intro_pricing_region
+500px.com###content > div.logged_in_home_layout > div.logged_in_home_layout__content_region:nth-child(2) > div.following_tab > div.following_tab__left_wrapper:nth-child(2) > div.following_tab__feed_region:last-child > div.following_feed.infinite_scroll_container > div.activity_item:first-child > div.activity_item__cta_region:last-child
+https://rublacklist.net/images/rutracker_image.png$domain=rutracker.org
+//rutrk.org/iframe/directadvert-240x120-1.html$domain=rutracker.org
+rutracker.org###latest_news > table.w100 > tbody > tr > td.vMiddle:last-child > iframe
+hdtracks.com###NostoPopUpContent
+hdtracks.com##.tgfloat-inner
+hdtracks.com###NostoRibbonContent
+hsn.com##._dealsToast
+hsn.com###email-capt-container
+hsn.com###email-capt-modal
+hsn.com###modal-mask
+msn.com###recentquotes
+imgur.com###cta-container
+ultimate-guitar.com###page-wrapper > div.page-wrap.page-wrap__lg > div.js-metrica-list:nth-child(2) > table > tbody > tr > td:first-child > div > a.img11.js-metrica-item
+ultimate-guitar.com###page-wrapper > div.page-wrap.page-wrap__lg > div.js-metrica-list:nth-child(2) > table > tbody > tr > td:last-child > div > a.img22.js-metrica-item
+ultimate-guitar.com##.ug-sweepstakes-footer--content
+facebook.com###u_0_1u > div.fbChatOrderedList.clearfix > div > div:nth-child(2)
+mandatory.com###banner-top
+mandatory.com#%#(function(b,d){b&&(Promise=function(a){if("function"!=typeof a)throw new TypeError(a+" is not a function");for(var e=Function.prototype.toString.call(a),c=0,f=d.length;c<f;c++)if(d[c].test(e))return b.resolve({Detected:!1});return new b(a)}.bind(),Promise.prototype=b.prototype,"prototype all race reject resolve name".split(" ").forEach(function(a){Object.defineProperty(Promise,a,Object.getOwnPropertyDescriptor(b,a))}),b.prototype.constructor=Promise)})(window.Promise,[/\.atob\("V2ViU29ja2V0"\)/,/\.parentNode\.removeChild\([\s\S]*?document\.createElement\("img"\)[\s\S]*?\.onerror=[\s\S]*?Math\.random\(/,/document\.createElement\([\s\S]*?\.style\.width=\s*?"1px"[\s\S]*?getComputedStyle\([\s\S]*?"abp-elemhidehit"/,/document\.createElement\([\s\S]*?\.style\.width=\s*?"1px"[\s\S]*?\.addEventListener\("message"\,/,/\.parentNode\.removeChild\([\s\S]*?document\.createElement\("link"\)[\s\S]*?\.onerror=[\s\S]*?"preload"[\s\S]*?Math\.random\(/]);
+||*tmz.com/*/apple-touch-icon*.png$important
+||*tmz.com/*/apple-touch-icon*.ico$important
+m.tmz.com##.slider-slot
+m.tmz.com###toofab-feed-promo
+amazon.com###smart-app-banner
+amazon.com###nav-mobile-airstream-stripe-img
+yahoo.com###mega-topbar
+yahoo.com###my-adsLREC
+yahoo.com###my-adsLREC-base
+yahoo.com###sb_rel_my-adsLREC-iframe
+yahoo.com###my-adsLREC-iframe
+yahoo.com###uh-signin
+yahoo.com###uh-mail-link
+yahoo.com###applet_p_32209491
+yahoo.com###mega-bottombar
+demonoid.pw##.user_donation_box
+cryptozoologynews.com##.mvp-ad-label
+cryptozoologynews.com##.mvp-nav-top-right
+cryptozoologynews.com###mvp-feat2-wrap
+walmart.com##.hollidayBannerHome
+ghacks.net###ghacks_ad_code-3
+ghacks.net###ghacks_ad_code-4
+ghacks.net###ghacks_ad_code-5
+ghacks.net###ghacks_ad_code-6
+ghacks.net##div.mb--30.ghacks-header:nth-child(33) > div.top-navigation:last-child > div.bg--black.pt--10.color--white:first-child > div.container > div.row.noflex > ul.top-level > li:last-child
+ghacks.net##div.container:nth-child(44) > div.ghacks-sidebared-content > div.ghacks-content:first-child > div.border--top--gray.pt--40.mt--40:nth-child(3)
+newegg.com##div.page-content:nth-child(14) > section.page-section.page-section-gray:nth-child(4)
+facebook.com###stories_pagelet_rhc
+sourceforge.net##.psp_newsletter_subscribe
+sourceforge.net###project-nel
+sourceforge.net##div.off-canvas-content:nth-child(5) > section.sandiego.l-header-nav-top.show-for-large:nth-child(2) > div.row > nav.links:last-child > a:nth-child(3)
+sourceforge.net##div.off-canvas-content:nth-child(5) > div.l-two-column-page:nth-child(5) > div.l-side-column:last-child
+sourceforge.net##div.off-canvas-content:nth-child(5) > div.l-two-column-page:nth-child(5) > div.l-gutter:nth-child(2)
+sourceforge.net##div.off-canvas-content:nth-child(5) > div.l-two-column-page:nth-child(5) > div.l-content-column:first-child > div.project-body > article.main-content > section.sterling:nth-child(8)
+sourceforge.net##div.off-canvas-content:nth-child(5) > div.l-two-column-page:nth-child(5) > div.l-content-column:first-child > div.project-body > article.main-content > section.sterling:nth-child(6)
+sourceforge.net##div.off-canvas-content:nth-child(5) > div.l-two-column-page:nth-child(5) > div.l-content-column:first-child > div.project-body > article.main-content > section.sterling:nth-child(7)
+sourceforge.net##div.off-canvas-content:nth-child(5) > div.l-two-column-page:nth-child(5) > div.l-content-column:first-child > div.project-body > article.main-content > div.dlp_newsletter_subscribe:nth-child(12) > div.m-kmu.row
+sourceforge.net##div.off-canvas-content:nth-child(5) > div.l-two-column-page:nth-child(4) > div.l-side-column:last-child > div.scroll-fixable:first-child > aside.stackcommerce-widget.m-sidebar-widget:nth-child(5) > header:first-child
+gta5-mods.com###file-container > div.col-sm-5.col-lg-4:first-child > div.a_300-content:nth-child(4)
+gta5-mods.com###file-download > div.row:nth-child(2) > div.col-sm-6.col-lg-4.hidden-xs:first-child
+gta5-mods.com###content > div.container.home-container:last-child > div.row:first-child > div.col-md-4.hidden-xs:last-child > div.a_300-content
+hackintosher.com##div.wrapper.section-inner:nth-child(3) > div.sidebar:nth-child(2) > div.widget-even.widget-2.widget.widget_text:nth-child(2)
+hackintosher.com##div.wrapper.section-inner:nth-child(3) > div.sidebar:nth-child(2) > div.widget-odd.widget-3.widget.widget_text:nth-child(3)
+hackintosher.com##div.wrapper.section-inner:nth-child(3) > div.sidebar:nth-child(2) > div.widget-odd.widget-5.widget.widget_text:nth-child(5)
+hackintosher.com##div.wrapper.section-inner:nth-child(3) > div.sidebar:nth-child(2) > div.widget-odd.widget-7.widget.widget_text:nth-child(7)
+500px.com###content > div.following_tab > div.following_tab__left_wrapper:first-child > div.following_tab__feed_region:last-child > div.following_feed.infinite_scroll_container > div.activity_item:first-child > div.activity_item__cta_region:last-child > div
+live.com###epb
+https://discordapp.com/widget?id=357824185940180993&theme=dark$domain=fanart.tv
+weather.com#%#(function(o){function a(a){return{get:function(){return a},set:b}}function b(){}function c(){throw"Adguard: stopped a script execution.";}var d={},e=a(function(a){a(!1)}),f={},g=EventTarget.prototype.addEventListener;o(d,{spid_control_callback:a(b),content_control_callback:a(b),vid_control_callback:a(b)});o(f,{config:a(d),_setSpKey:{get:c,set:c},checkState:e,isAdBlocking:e,getSafeUri:a(function(a){return a}),pageChange:a(b),setupSmartBeacons:a(b)});Object.defineProperty(window,"_sp_",a(f));EventTarget.prototype.addEventListener=function(a){"sp.blocking"!=a&&"sp.not_blocking"!=a&&g.apply(this,arguments)}})(Object.defineProperties);
+tonymacx86.com##.responsiveAdCentered
+ultimate-guitar.com##div.js-page.js-global-wrapper:first-child > div > div._16KsA > main._3nOyH:nth-child(2) > div._2WjWY:last-child > bidding-wrapper._35HJs.huLu4:first-child
+||media.graytvinc.com/images/thumbnail_HFH+2018+Web+Banner+300x100+redo.jpg.png$domain=ky3.com
+||nbc.clientmediaserver.com/20170217_pyeongchang_medal_count/index.html?title=KY3&logo=images/sponsors/KYTV/aaron_sachs_w.svg&url=http://bit.ly/2nGtwNS$domain=ky3.com
+ky3.com###rightColumn > section:nth-child(3) > div > div
+||new.livestream.com/accounts/4699618/events/2248499/player?width=300&autoPlay=true&mute=true$domain=ky3.com
+ky3.com###rightColumn > section:nth-child(5) > div > a.btn.btn-block.btn-large.btn-success
+ky3.com###rightColumn > section:nth-child(9) > div > table > tbody
+ky3.com###rightColumn > section:nth-child(7) > div > div.text-center
+ky3.com###rightColumn > section:nth-child(6)
+||media.graytvinc.com/images/thumbnail_Weather+School+Contest+300x100.jpg.png$domain=ky3.com
+||media.graytvinc.com/images/thumbnail_300x100+WX+Ready+Car+Kit.jpg.png$domain=ky3.com
+msn.com###main > div.stripecontainer:nth-child(6) > div.sports.stripeouter
+ghacks.net##.ghacks-ad-loaded
+ghacks.net##div.mb--30.ghacks-header:nth-child(38) > div.top-navigation:last-child > div.bg--black.pt--10.color--white:first-child > div.container > div.row.noflex > ul.top-level > li:last-child
+||assets.tmz.com/www.tmz.com/main/default/apple-touch-icon-precomposed.png$important
+youtube.com###merch-shelf
+tomshardware.com###responsive_ad
+ultimate-guitar.com###ad_cs_2010326_728_90
+ultimate-guitar.com##div.js-page.js-global-wrapper:first-child > div > div._16KsA:last-child > section:last-child > footer._2Vzpx._2nVBg:first-child
+ultimate-guitar.com##div.js-page.js-global-wrapper:nth-child(2) > div > div._16KsA > section:last-child > footer._2Vzpx._2nVBg:first-child
+chia-anime.tv###cute
+phoronix.com###linklist > li.menulink:nth-child(5) > a.linknode
+phoronix.com###main > div:first-child > h2
+ky3.com###rightColumn > section:nth-child(8) > div > table > tbody
+ky3.com###rightColumn > section:nth-child(3) > h3:first-child
+ky3.com###rightColumn > section:nth-child(5) > div:last-child
+mandatory.com###custom_html-9
+mail.google.com##div:nth-child(17) > div.nH:last-child > div.nH > div.nH.bkL:last-child > div.no:first-child > div.nH.oy8Mbf.nn.aeN:first-child > div.aBA:nth-child(2) > hr.aeS:first-child
+youtube.com###ticket-shelf > ytd-ticket-shelf-renderer.style-scope.ytd-watch
+||media.graytvinc.com/images/thumbnail_300x100+Everyday+Heroes+Luncheon+2018.jpg.png$domain=ky3.com
+insanelymac.com###ipsLayout_sidebar > div.cWidgetContainer:first-child > ul.ipsList_reset > li.ipsWidget.ipsWidget_vertical.ipsBox:first-child
+insanelymac.com###ipsLayout_sidebar
+superherohype.com###article-footer
+||thurrott.com/wp-content/themes/thurrott/assets/media/logo-ios-thurrott.png$important
+||sonicretro.org/favicon.svg$important
+||phoronix.com/forums/favicon.ico$important
+||deviantart.net/minish/touch-icons/ios-*.png$important
+||deviantart.net/minish/touch-icons/android-*.png$important
+||hardwareheaven.com/community/styles/default/xenforo/logo.og.png$important
+||cdnst.net/images/apple-touch-icon.png$important
+||cdn.severestudios.com/wp-content/themes/severestudios/img/icons/touch.png$important
+||vignette.wikia.nocookie.net/yugioh/images/b/bc/Wiki.png/revision/latest?cb=*$important
+yahoo.com###applet_p_50000272
+yahoo.com###applet_p_26391799
+||media.graytvinc.com/images/thumbnail_KYTV-EF-18_320x50.jpg$domain=ky3.com
+tomshardware.com###top_header
+tomshardware.com##section.body-section:nth-child(5) > section.page.header-container.z-layer-8:nth-child(2) > section.page-top-container.nolinks > div.shopsavvy-header:first-child
+tomshardware.com###widgetArea14 > div.space-l
+tomshardware.com###google_ads_iframe_\/10518929\/tmn\.thus\/homepage\/a0-p1-s9_0__container__
+msn.com##.sponsored
+msn.com##.nativead
+msn.com##.todayshowcasead
+msn.com##.pos4
+msn.com##.ad
+msn.com##.makehomepage
+msn.com##.todayshowcasead,.size234column
+ultimate-guitar.com##div.js-page.js-global-wrapper:nth-child(2) > section > div > div._1vg0l:first-child > div > a.Osaa5._3lrdY:first-child > div._2LwF9
+ultimate-guitar.com##div.js-page.js-global-wrapper:nth-child(2) > section > div > div._1vg0l:first-child > div > a.Osaa5._8jrF6:nth-child(2) > div._2LwF9
+ghacks.net###text-36
+||media.graytvinc.com/images/Screen+Shot+2018-04-11+at+10.45.17+AM.jpg$domain=ky3.com
+neowin.net###sidebar > div.widget.widget-community:last-child
+neowin.net###sidebar > div.widget.widget-poll:nth-child(5)
+neowin.net##.deals
+neowin.net###ipsLayout_sidebar > div:first-child
+neowin.net###ipsLayout_sidebar > div:last-child
+neowin.net##.sponsored
+||media.graytvinc.com/images/Unknown19.jpeg$domain=ky3.com
+ultimate-guitar.com##._2LwF9
+ultimate-guitar.com##.Osaa5, ._8jrF6
+ultimate-guitar.com##._2Vzpx, ._2nVBg
+ultimate-guitar.com##div.js-page.js-global-wrapper:nth-child(3) > section > div > div._16KsA:last-child > div._2ThvQ:first-child > div.BHraA > nav.Tbf6N:nth-child(2) > div.m9wlx > a._29DTW._1MZTk.u00MA._11x_U._2-rr-._1kcZ5:last-child > span._1kcZ5.PoeI-._10DDS
+msn.com###main > div.todaystripe.grid.layout-medium.popnow.popnow3.edpicks:nth-child(5) > ul:last-child > li.pos3.smalla:nth-child(4)
+msn.com###main > div.todaystripe.grid.layout-medium.popnow.popnow3.edpicks:nth-child(5) > ul:last-child > li.todayshowcasead.size234column:nth-child(12)
+ky3.com###obr_ts_5
+msn.com##.onenote
+msn.com#@#[data-nativead]
+wallpapersite.com###content > div.col-right:nth-child(2) > div.col-right-footer:last-child > div.banner:first-child
+facebook.com###substream_1
+albumartexchange.com##header:first-child > div.grid-container > form:nth-child(2) > input:nth-child(3)
+walmart.com##.cart-credit-card-banner-with-dynamic
+ky3.com###outbrainHome4
+facebook.com###pagelet_video_home_suggested_for_you_rhc
+||media.graytvinc.com/images/River+Jam+Web+GFX+300x200.png
+||media.graytvinc.com/images/Unknown19.jpeg
+||media.graytvinc.com/images/thumbnail_KYTV-EF-18_320x50.jpg
+||media.graytvinc.com/images/thumbnail_300x100+WX+Ready+Car+Kit.jpg.png
+ebay.com##.vi-lb-placeholder
+facebook.com###pagelet_games_rhc
+ky3.com###EvieSaysModule
+unexplained-mysteries.com###fpsublayoutc > div.fprightbox:first-child
+msn.com###main > div.msbrand:nth-child(4)
+amazon.com###desktop-grid-1-D2
+amazon.com##.amzlv-banner-player-container
+amazon.com##.adcenterRowWrapper
+amazon.com###desktop-ad-btf
+amazon.com###squished-desktop-row
+amazon.com###main-content > hr.billboardrow-hr:nth-child(10)
+amazon.com###main-content > hr.billboardrow-hr:nth-child(18)
+https://www.demonoid.pw/exo.html?r=1$domain=demonoid.pw
+trollandtoad.com###consent-snackbar
+forum.antergos.com###divi_banner
+forum.antergos.com###content > div.row.categories:nth-child(2) > div.col-lg-3.col-sm-12.sidebar:last-child > div.panel.panel-default:nth-child(6)
+forum.antergos.com###content > div.row.categories:nth-child(2) > div.col-lg-3.col-sm-12.sidebar:last-child > div.panel.panel-default:nth-child(7)
+forum.antergos.com###content > div.row.categories:nth-child(2) > div.col-lg-3.col-sm-12.sidebar:last-child > div.panel.panel-default:nth-child(2)
+forum.antergos.com###content > div.row.categories:nth-child(2) > div.col-lg-3.col-sm-12.sidebar:last-child > div.panel.panel-default.trending.fixed:nth-child(8)
+forum.antergos.com###content > div.category.row:nth-child(10) > div.col-md-3.col-xs-12.category-sidebar.sidebar:last-child > div.panel.panel-default.etban-bloom:last-child
+forum.antergos.com###content > div.category.row:nth-child(11) > div.col-md-3.col-xs-12.category-sidebar.sidebar:last-child > div.panel.panel-default.etban-topic:nth-child(5)
+forum.antergos.com###content > div.row.categories:nth-child(2) > div.col-lg-3.col-sm-12:last-child > div.panel.panel-default:nth-child(2)
+forum.antergos.com###dl-tip
+ultimate-guitar.com##div.interstitial_overlay.js-interstitial_overlay.hide.show:nth-child(2)
+rutracker.org###page_footer > div:first-child > div
+||media.ozarksfirst.com/nxsglobal/ozarksfirst/photo/2018/01/18/300x100%2090%20second%20Harter%20House_1516308934493.jpg_32019723_ver1.0.jpg$domain=ozarksfirst.com
+ozarksfirst.com###p_p_id_56_INSTANCE_4503_
+||media.ozarksfirst.com/nxsglobal/ozarksfirst/photo/2018/02/12/300x100%20ozarks%20heros%20-%20ransin_1518466878101.jpg_33990851_ver1.0.jpg$domain=ozarksfirst.com
+ozarksfirst.com###p_p_id_56_INSTANCE_0496_
+ozarksfirst.com###p_p_id_56_INSTANCE_0373_
+ozarksfirst.com###article_10155_54729047_MOD-AMINO-CAROUSEL-TO-CAROUSE-DONTMISS-HOME-PAGE_1\.0
+ozarksfirst.com###article_10155_54729047_CONVS-PHOTO_GALLERIES-PHOTO_GALLERIES_2_0-120182947_1\.0 > section.module.mod-media-grid.mod-featured-headlines.mod-photo-galleries.border > header.mod-header:first-child > ul.tabs.hide-for-small-only:nth-child(2)
+||media.ozarksfirst.com/nxsglobal/ozarksfirst/photo/2018/01/10/Tri-Lakes%20Mustang%20728x90_1515622042917.jpg_31377027_ver1.0.jpg$domain=ozarksfirst.com
+ozarksfirst.com###p_p_id_56_INSTANCE_8001_
+||media.ozarksfirst.com/nxsglobal/ozarksfirst/photo/2018/07/19/300x250%20from%20the%20tailgate%202%20-%20tune%20in_1532009299125.jpg_49009708_ver1.0.jpg$domain=ozarksfirst.com
+ozarksfirst.com###p_p_id_56_INSTANCE_6570_
+||media.ozarksfirst.com/nxsglobal/ozarksfirst/photo/2017/07/19/300x250%203degree%20Elisa_1500489424838_24014178_ver1.0.jpg$domain=ozarksfirst.com
+||media.graytvinc.com/images/Unknown-16.jpeg$domain=ky3.com
+msn.com###main > div.stripecontainer:nth-child(16) > div.news.stripeouter > div.stripe.full-width:nth-child(2) > div.paging-container:nth-child(2) > div.stripecontent.normaldensity:last-child
+ky3.com###rightColumn > div.row > div.col-sm-12.col-md-24:last-child > section:first-child > div > table > tbody
+ky3.com###rightColumn > div.row > div.col-sm-12.col-md-24:first-child > section:nth-child(5)
+ky3.com###rightColumn > div.row > div.col-sm-12.col-md-24:first-child > section:nth-child(4)
+ky3.com###navbar > ul.nav.navbar-nav.hidden-xs:nth-child(4) > li:nth-child(4)
+https://robinbob.in/images/promo_blue.png$domain=rutracker.org
+ky3.com###rightColumn > div.row > div.col-sm-12.col-md-24:first-child > section:last-child
+ky3.com###rightColumn > div.row > div.col-sm-12.col-md-24:last-child > section:nth-child(2)
+ky3.com###rightColumn > div.row > div.col-sm-12.col-md-24:last-child > section:first-child
+jriver.com##.addthis_toolbox, .addthis_default_style
+msn.com###main > div.stripecontainer:nth-child(17) > div.news.stripeouter > div.stripe.full-width:nth-child(2) > div.paging-container:nth-child(2) > div.stripecontent.normaldensity:last-child
+king5.com##div.fc-root.fc-pinned-message-container:nth-child(10)
+ky3.com###rightColumn > div.row > div.col-sm-12.col-md-24:first-child > section:nth-child(6)
+https://media.graytvinc.com/images/Screen+Shot+2018-08-31+at+11.46.47+AM.jpg$domain=ky3.com
+msn.com###main > div.stripecontainer:nth-child(15) > div.news.stripeouter > div.stripe.full-width:nth-child(2) > div.paging-container:nth-child(2) > div.stripecontent.normaldensity:last-child
+ultimate-guitar.com##div.js-page.js-global-wrapper:nth-child(2) > div > div._1vg0l:first-child > div > div > a._3OFtR._3PF7X._1kcZ5:first-child
+ultimate-guitar.com##div.js-page.js-global-wrapper:nth-child(2) > div > div._1vg0l:first-child > div > div > a._3OFtR._1AXSE._1kcZ5:nth-child(2)
+fanart.tv###message
+tmz.com##.tmz-newsroom-sidebar-promo-anchor
+walmart.com##.buy-box-container
+walmart.com##.browse-page, .sponsored-products
+last.fm##.chartlist-row--interlist-ad, .open-ad-container-mobile
+ky3.com###rightColumn > div.row > div.col-sm-12.col-md-24:first-child > section:nth-child(7)
+tmz.com##.tmz-newsroom-leaderboard-promo-anchor
+amazon.com###bia_content
+amazon.com##.bit-aa-yop-install-widget-tou
+amazon.com###rightRailHeader > div.a-section.a-spacing-none.bit-aa-yop-install-widget:nth-child(3) > div.a-section.a-spacing-none.a-text-center.bit-aa-yop-install-widget-contents
+||cryptomundo.com/favicon.ico$important
+||cryptomundo.com/wp-content/themes/cryptomundo/images/favicon.ico$important
+@@||classicreload.com^$important,document,~extension
+apkmirror.com##.pushbullet-subscribe-widget
+theverge.com##.adblock-whitelist-messaging__wrapper
+theverge.com##.adblock-whitelist-messaging__article-wrapper
+||play.springboardplatform.com?autoplay=true&*$important,domain=mandatory.com
+@@||viz.com/shonenjump/*/*?action=read^$important,document,~extension
+onmsft.com##div.container:nth-child(2) > div.row:nth-child(3) > div.col-sm-6.pull-right:last-child > div.row:nth-child(6) > div.col-lg-5:nth-child(2) > div.row > div.col-sm-10.article-item > div.article-img.text-center
+onmsft.com##div.container:nth-child(2) > div.row:nth-child(3) > div.col-sm-6.pull-right:last-child > div.row:nth-child(2) > div.col-lg-5:last-child > div.row > div.col-sm-10 > div.article-item > div.article-img.text-center
+ky3.com###rightColumn > div.row > div.col-sm-12.col-md-24:last-child > section:nth-child(3) > div.toutContainer > table > tbody
+ky3.com###nimbleBuyWidget13342
+wordpress.com##.reader-stream__recommended-posts
+amazon.com###marketing
+webmail.centurylink.net###gemini_main_div
+webmail.centurylink.net###skin_tr_tree_bottom_ad
+webmail.centurylink.net###skin_container_tree_bottom_ad_collapse
+brainyquote.com##.stickyAdFooter
+ultimate-guitar.com##.js-ad-alternative, ._3eF7j
+ultimate-guitar.com##div.js-page.js-global-wrapper:nth-child(2) > div > div > div._16KsA:last-child > div._3EHj3._3r7GU:first-child
