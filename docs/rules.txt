@@ -1,6 +1,10 @@
 ! Title: Custom filter
+! Version: 2.10.0.2
 #%#console.log('test custom rules');
 ||perfmelab.com^$third-party
 ||digitaalburg.com^*banner
 klusidee.nl#@#.header
 #%#console.log('added rule');
+#%#console.log('added version');
+
+
